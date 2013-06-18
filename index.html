@@ -1,0 +1,18 @@
+<!doctype html>
+<html ng-app>
+   <head>
+      <title>Angular Life</title>
+      <link rel="stylesheet" href="life.css" />
+   </head>
+   <body>
+      <div ng-controller="LifeCtrl">
+         <table class="board">
+            <tr ng-repeat="row in rows">
+               <td ng-repeat="cell in row" class="cell-{{cell}}"></td>
+            </tr>
+         </table>
+      </div>
+      <script src="http://code.angularjs.org/1.0.6/angular.min.js"></script>
+      <script src="life.js"></script>
+   </body>
+</html>
